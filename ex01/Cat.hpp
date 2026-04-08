@@ -1,0 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/06 16:45:42 by alejandj          #+#    #+#             */
+/*   Updated: 2026/04/08 19:16:28 by alejandj         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef CAT_HPP
+#define CAT_HPP
+
+#include "Animal.hpp"
+#include "Brain.hpp"
+
+class Cat: public Animal
+{
+	private:
+		Brain* brain;
+    
+    public:
+		Cat();
+		Cat(const Cat& object);
+		Cat& operator=(const Cat& object);
+		~Cat();
+		
+		void makeSound() const;
+		Brain* getBrain() const;
+};
+
+#endif
