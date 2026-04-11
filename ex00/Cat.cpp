@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:50:06 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/06 17:12:10 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:50:23 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Cat::Cat(): Animal()
 {
 	std::cout << MAGENTA << "Cat: Default constructor called" << RESET << std::endl;
-	type = "Cat";
+	_type = "Cat";
 }
 
 Cat::Cat(const Cat& object): Animal(object)

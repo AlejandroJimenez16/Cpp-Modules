@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:09:17 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/09 12:37:52 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 19:03:31 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Dog: public Animal
 {
 	private:
-		Brain* brain;
+		Brain* _brain;
 	
 	public:
 		Dog();

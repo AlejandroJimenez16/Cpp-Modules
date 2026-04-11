@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 17:57:02 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/06 17:59:19 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:51:32 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 WrongCat::WrongCat(): WrongAnimal()
 {
 	std::cout << MAGENTA << "WrongCat: Default constructor called" << RESET << std::endl;
-	type = "WrongCat";
+	_type = "WrongCat";
 }
 
 WrongCat::WrongCat(const WrongCat& object): WrongAnimal(object)

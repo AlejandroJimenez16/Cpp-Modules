@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/07 13:35:14 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/08 19:02:55 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:54:35 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 class Brain
 {
 	private:
-		std::string ideas[100];
+		std::string _ideas[100];
 
 	public:
 		Brain();

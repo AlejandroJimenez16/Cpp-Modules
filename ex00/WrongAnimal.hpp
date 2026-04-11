@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 17:41:50 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/06 17:46:23 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:50:50 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 class WrongAnimal
 {
     protected:
-		std::string type;
+		std::string _type;
 		
 	public:
 		WrongAnimal();

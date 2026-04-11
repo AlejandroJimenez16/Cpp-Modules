@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:45:42 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/09 12:37:44 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 19:02:16 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Cat: public Animal
 {
 	private:
-		Brain* brain;
+		Brain* _brain;
     
     public:
 		Cat();

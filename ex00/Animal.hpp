@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 18:18:20 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/06 17:14:31 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:49:47 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 class Animal
 {
 	protected:
-		std::string type;
+		std::string _type;
 		
 	public:
 		Animal();

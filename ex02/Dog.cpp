@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:31:50 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/09 12:37:48 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 19:04:03 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 Dog::Dog(): Animal()
 {
 	std::cout << MAGENTA << "Dog: Default constructor called" << RESET << std::endl;
-	type = "Dog";
-	brain = new Brain();
+	_type = "Dog";
+	_brain = new Brain();
 }
 
 Dog::Dog(const Dog& object): Animal(object)
 {
 	std::cout << BLUE << "Dog: Copy constructor called" << RESET << std::endl;
-	brain = new Brain(*object.brain);
+	_brain = new Brain(*object._brain);
 }
 
 Dog& Dog::operator=(const Dog& object)
@@ -31,8 +31,8 @@ Dog& Dog::operator=(const Dog& object)
 	if (this != &object)
 	{
 		Animal::operator=(object);
-		delete brain;
-		brain = new Brain(*object.brain);
+		delete _brain;
+		_brain = new Brain(*object._brain);
 	}
 
 	return (*this);
@@ -41,7 +41,7 @@ Dog& Dog::operator=(const Dog& object)
 Dog::~Dog()
 {
 	std::cout << RED << "Dog: Destructor called" << RESET << std::endl;
-	delete brain;
+	delete _brain;
 }
 
 void Dog::makeSound() const
@@ -51,5 +51,5 @@ void Dog::makeSound() const
 
 Brain* Dog::getBrain() const
 {
-	return (brain);
+	return (_brain);
 }

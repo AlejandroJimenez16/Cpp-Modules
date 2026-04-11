@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:31:50 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/06 16:44:21 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/11 18:50:33 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Dog::Dog(): Animal()
 {
 	std::cout << MAGENTA << "Dog: Default constructor called" << RESET << std::endl;
-	type = "Dog";
+	_type = "Dog";
 }
 
 Dog::Dog(const Dog& object): Animal(object)
