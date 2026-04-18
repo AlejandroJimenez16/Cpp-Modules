@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 11:29:49 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/14 14:07:47 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/16 13:32:17 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ class Character: public ICharacter
 	private:
 		std::string _name;
 		AMateria* _inventory[4];
+		int _floorCount;
+		AMateria* _floor[50];
 
 	public:
 		Character();
