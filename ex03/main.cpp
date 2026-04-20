@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 13:50:28 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/20 22:07:37 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/20 23:55:15 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int main()
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
 
-	std::cout << "\n============== Use ==============\n" << std::endl;
+	std::cout << "\n============== Use ================\n" << std::endl;
 
 	ICharacter* bob = new Character("bob");
 

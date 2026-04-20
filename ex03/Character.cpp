@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 11:56:53 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/20 22:16:02 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/20 23:29:15 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,7 +137,7 @@ void Character::unequip(int idx)
 
 	if (!_inventory[idx])
 	{
-		std::cout << RED << "[!] Empty slot" << RESET << std::endl;
+		std::cout << YELLOW << "[!] Empty slot" << RESET << std::endl;
 		return ;
 	}
 
@@ -166,5 +166,5 @@ void Character::use(int idx, ICharacter& target)
 	if (_inventory[idx])
 		_inventory[idx]->use(target);
 	else
-    	std::cout << RED << "[!] No materia in this slot!" << RESET << std::endl;
+    	std::cout << YELLOW << "[!] No materia in this slot!" << RESET << std::endl;
 }
