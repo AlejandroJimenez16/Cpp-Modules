@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 13:17:34 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/18 21:39:04 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/20 19:49:15 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,26 +57,19 @@ void MateriaSource::learnMateria(AMateria* learn)
 	if (!learn)
 		return ;
 
-	
-	for (int i = 0; i < 4; i++)
-	{
-		if (_memory[i] == learn)
-			return ;
-	}
-	
-
 	for (int i = 0; i < 4; i++)
 	{
 		if (!_memory[i])
 		{
 			std::cout << MAGENTA << "[" << learn->getType() << "] Materia has been learned!" << RESET << std::endl;
-			_memory[i] = learn;
+			_memory[i] = learn->clone();
+			delete learn;
 			return ;
 		}
 	}
 
-	delete learn;
 	std::cout << RED << "[!] Memory is full!" << RESET << std::endl;
+	delete learn;
 }
 
 AMateria* MateriaSource::createMateria(std::string const & type)

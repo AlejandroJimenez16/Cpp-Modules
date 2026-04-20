@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 11:56:53 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/18 21:39:04 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/20 21:29:09 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ Character::~Character()
 	for (int i = 0; i < 4; i++)
 		delete _inventory[i];
 
-	for (int i = 0; i < 50; i++)
+	for (int i = 0; i < _floorCount; i++)
 		delete _floor[i];
 }
 std::string const & Character::getName() const
@@ -103,6 +103,12 @@ void Character::equip(AMateria* m)
 		}
 	}
 
+	for (int i = 0; i < _floorCount; i++)
+	{
+		if (_floor[i] == m)
+			return ;
+	}
+
 	for (int i = 0; i < 4; i++)
 	{
 		if (!_inventory[i])
@@ -113,8 +119,12 @@ void Character::equip(AMateria* m)
 		}
 	}
 	
-	delete m;
 	std::cout << RED << "[!] Inventory is full!" << RESET << std::endl;
+	if (_floorCount < 50)
+	{
+		_floor[_floorCount] = m;
+		_floorCount++;
+	}
 }
 
 void Character::unequip(int idx)
