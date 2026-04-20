@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 11:56:53 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/20 21:29:09 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/20 22:16:02 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ Character::~Character()
 	for (int i = 0; i < 4; i++)
 		delete _inventory[i];
 
-	for (int i = 0; i < _floorCount; i++)
+	for (int i = 0; i < 50; i++)
 		delete _floor[i];
 }
 std::string const & Character::getName() const
