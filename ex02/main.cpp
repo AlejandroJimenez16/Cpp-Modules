@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:56:06 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/21 13:20:21 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/21 15:14:48 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(void)
 	int N = 10;
 	Animal* animals[N];
 	
-	std::cout << "============== Creation ==============\n" << std::endl;
+	std::cout << "\n============== Creation ==============\n" << std::endl;
 	
 	for (int i = 0; i < N / 2; i++)
 	{
