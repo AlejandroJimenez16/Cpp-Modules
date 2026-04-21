@@ -6,6 +6,8 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC =	Animal.cpp			\
 		Dog.cpp				\
 		Cat.cpp				\
+		WrongAnimal.cpp		\
+		WrongCat.cpp		\
 		Brain.cpp			\
 		main.cpp			\
 
@@ -14,6 +16,8 @@ OBJECTS = $(SRC:.cpp=.o)
 HEADERS =	Animal.hpp			\
 			Dog.hpp				\
 			Cat.hpp				\
+			WrongAnimal.hpp		\
+			WrongCat.hpp		\
 			Brain.hpp			\
 
 

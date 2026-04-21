@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:56:06 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/09 13:32:22 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/04/21 13:18:14 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ int main(void)
 		std::cout << "Object: " << i + 1 << std::endl;
 		delete animals[i];
 	}
+
 	std::cout << "\nOriginal Dog:" << std::endl;
 	delete originalDog;
 	std::cout << "Copy Dog:" << std::endl;
