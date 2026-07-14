@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/17 13:07:23 by alejandj          #+#    #+#              #
-#    Updated: 2026/02/17 13:10:42 by alejandj         ###   ########.fr        #
+#    Updated: 2026/07/15 00:42:41 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,11 +32,11 @@ $(NAME): $(OBJECTS)
 	@echo "\033[0;31m⚙️  COMPILANDO... 🚀\033[0m"
 	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(NAME)
 	@echo ""
-	@echo "✅ \033[0;32mCPP COMPILAD0!!!\033[0m"
+	@echo "✅ \033[0;32mCPP COMPILADO!!!\033[0m"
 	@echo ""
 	
 %.o: %.cpp
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # ---------------------------------------------------------------------------- #
 # 🧹 CLEANING

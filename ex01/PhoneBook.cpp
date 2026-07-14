@@ -6,11 +6,12 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 14:36:20 by alejandj          #+#    #+#             */
-/*   Updated: 2026/02/17 14:44:56 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/07/14 15:01:04 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <sstream>
 
 PhoneBook::PhoneBook()
 {
@@ -175,7 +176,8 @@ int PhoneBook::searchContact()
 	if (std::cin.eof())
 		return (-1);
 
-	n = std::stoi(input);
+	std::istringstream iss(input);
+	iss >> n;
 	
 	if (n >= count)
 		std::cout << "Contact not found" << std::endl;

@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 13:44:13 by alejandj          #+#    #+#             */
-/*   Updated: 2026/02/11 17:01:18 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/07/15 01:06:44 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Contact
 		std::string	nickname;
 		std::string	phone_number;
 		std::string	darkest_secret;
+
 	public:
 		Contact();
 		Contact(

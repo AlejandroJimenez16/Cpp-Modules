@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 14:15:46 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/29 19:15:26 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/07/15 00:21:35 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	ft_toupper(char c)
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
-} 
+}
 
 int	main(int argc, char **argv)
 {

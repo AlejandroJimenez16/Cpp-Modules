@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 12:59:36 by alejandj          #+#    #+#             */
-/*   Updated: 2026/02/13 13:23:24 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/07/15 00:31:37 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class PhoneBook
 		int		index;
 		int		count;
 		Contact contact_list[8];
+
 	public:
 		PhoneBook();
 		int addContact(void);
