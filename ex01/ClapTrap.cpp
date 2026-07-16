@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 13:26:05 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/30 13:30:21 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/07/16 19:34:10 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 		std::cout << "ClapTrap <" << _name << "> "
 				  << RED << "is already dead!!" << RESET << std::endl;
 	}
-	else if (amount >= _hitPoints)
+	else if (amount >= (unsigned int)_hitPoints)
 	{
 		_hitPoints = 0;
 		std::cout << "ClapTrap <" << _name << ">"
