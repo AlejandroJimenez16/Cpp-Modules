@@ -32,11 +32,11 @@ $(NAME): $(OBJECTS)
 	@echo "\033[0;31m⚙️  COMPILANDO... 🚀\033[0m"
 	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(NAME)
 	@echo ""
-	@echo "✅ \033[0;32mCPP COMPILAD0!!!\033[0m"
+	@echo "✅ \033[0;32mCPP COMPILADO!!!\033[0m"
 	@echo ""
 
 %.o: %.cpp $(HEADERS)
-	$(CXX) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # ---------------------------------------------------------------------------- #
 # 🧹 CLEANING
