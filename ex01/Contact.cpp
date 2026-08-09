@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 14:03:18 by alejandj          #+#    #+#             */
-/*   Updated: 2026/02/12 13:15:15 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/09 17:40:46 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,41 +15,41 @@
 Contact::Contact(){}
 
 Contact::Contact(
-    const std::string first_name,
-	const std::string last_name,
+    const std::string firstName,
+    const std::string lastName,
 	const std::string nickname,
-	const std::string phone_number,
-	const std::string darkest_secret
+    const std::string phoneNumber,
+    const std::string darkestSecret
 )
 {
-    this->first_name = first_name;
-    this->last_name = last_name;
+    this->firstName = firstName;
+    this->lastName = lastName;
     this->nickname = nickname;
-    this->phone_number = phone_number;
-    this->darkest_secret = darkest_secret;
+    this->phoneNumber = phoneNumber;
+    this->darkestSecret = darkestSecret;
 }
 
-std::string Contact::get_first_name()
+std::string Contact::getFirstName()
 {
-    return first_name;
+    return firstName;
 }
 
-std::string Contact::get_last_name()
+std::string Contact::getLastName()
 {
-    return last_name;
+    return lastName;
 }
 
-std::string Contact::get_nickname()
+std::string Contact::getNickname()
 {
     return nickname;
 }
 
-std::string Contact::get_phone_number()
+std::string Contact::getPhoneNumber()
 {
-    return phone_number;
+    return phoneNumber;
 }
 
-std::string Contact::get_darkest_secret()
+std::string Contact::getDarkestSecret()
 {
-    return darkest_secret;
+    return darkestSecret;
 }
