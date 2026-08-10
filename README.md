@@ -265,7 +265,7 @@ This exercise consists of implementing the Harl class with multiple complaints u
 **Example usage:**
 
 ```bash
-$ ./harl_2.0
+$ ./harl
 # Output
 I love having extra bacon for my 7XL-double-cheese-triple-pickle-special ketchup burger. I really do!
 I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!

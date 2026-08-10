@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/19 12:24:41 by alejandj          #+#    #+#             */
-/*   Updated: 2026/07/15 17:46:48 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 21:02:16 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int main(int argc, char **argv)
 {
 	int i;
-	int	num_zombies;
+	int	numZombies;
 	
 	if (argc != 3)
 	{
@@ -26,13 +26,13 @@ int main(int argc, char **argv)
 	}
 
 	std::istringstream iss(argv[1]);
-	iss >> num_zombies;
-	if (iss.fail() || num_zombies <= 0)
+	iss >> numZombies;
+	if (iss.fail() || numZombies <= 0)
 		return (1);
 		
-	Zombie* horde = zombieHorde(num_zombies, argv[2]);
+	Zombie* horde = zombieHorde(numZombies, argv[2]);
 	i = 0;
-	while (i < num_zombies)
+	while (i < numZombies)
 	{
 		horde[i].announce();
 		i++;

@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 12:40:03 by alejandj          #+#    #+#             */
-/*   Updated: 2026/07/15 18:11:28 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 21:03:47 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ std::string replaceString(std::string line, std::string s1, std::string s2)
 {
 	int pos = 0;
 	std::string newline;
-	size_t find_pos = line.find(s1);
+	size_t findPos = line.find(s1);
 	
-	while (find_pos != std::string::npos)
+	while (findPos != std::string::npos)
 	{
-		newline.append(line.substr(pos, find_pos - pos));
+		newline.append(line.substr(pos, findPos - pos));
 		newline.append(s2);
-		pos = find_pos + s1.length();
-		find_pos = line.find(s1, pos);
+		pos = findPos + s1.length();
+		findPos = line.find(s1, pos);
 	}
 	newline.append(line.substr(pos));
 
