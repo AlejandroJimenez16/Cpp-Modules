@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 20:02:15 by alejandj          #+#    #+#             */
-/*   Updated: 2026/02/17 13:06:11 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 20:39:25 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ int	Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
-Account::Account(int initial_deposit)
+Account::Account(int initialDeposit)
 {
 	this->_accountIndex = Account::_nbAccounts;
-	this->_amount = initial_deposit;
+	this->_amount = initialDeposit;
 	this->_nbDeposits = 0;
 	this->_nbWithdrawals = 0;
 

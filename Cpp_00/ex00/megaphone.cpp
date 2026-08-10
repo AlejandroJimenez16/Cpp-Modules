@@ -6,13 +6,13 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 14:15:46 by alejandj          #+#    #+#             */
-/*   Updated: 2026/08/09 17:40:39 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 19:55:03 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 
-char	ft_toupper(char c)
+char	ftToupper(char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
@@ -33,7 +33,7 @@ int	main(int argc, char **argv)
 		int j = 0;
 		while (argv[i][j])
 		{
-			std::cout << ft_toupper(argv[i][j]);
+			std::cout << ftToupper(argv[i][j]);
 			j++;
 		}
 		i++;

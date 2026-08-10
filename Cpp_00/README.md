@@ -64,25 +64,25 @@ This exercise consists of a program that allows the user to **store and display 
 **Contact**
 
 *Private attributes:*
-- `std::string first_name`
-- `std::string last_name`
+- `std::string firstName`
+- `std::string lastName`
 - `std::string nickname`
-- `std::string phone_number`
-- `std::string darkest_secret`
+- `std::string phoneNumber`
+- `std::string darkestSecret`
 
 *Public methods:*
-- `std::string get_first_name()`
-- `std::string get_last_name()`
-- `std::string get_nickname()`
-- `std::string get_phone_number()`
-- `std::string get_darkest_secret()`
+- `std::string getFirstName()`
+- `std::string getLastName()`
+- `std::string getNickname()`
+- `std::string getPhoneNumber()`
+- `std::string getDarkestSecret()`
 
 **PhoneBook**
 
 *Private attributes:*
 - `int index`
 - `int count`
-- `Contact contact_list[8]`
+- `Contact contactList[8]`
 
 *Public methods:*
 - `int addContact(void)`
@@ -109,7 +109,7 @@ Darkest secret: (example)
 
 PhoneBook >> SEARCH
 +----------+----------+----------+----------+
-|     Index|First_name| Last_name|  Nickname|
+|     Index|First name| Last name|  Nickname|
 +----------+----------+----------+----------+
 |         0| Alejandro|   Jimenez|      Alex|
 +----------+----------+----------+----------+
@@ -178,7 +178,7 @@ You are also provided with a tests.cpp file and an output log. The goal is to re
 **Example usage:**
 
 ```bash
-$ ./account_test
+$ ./accountTest
 # Output example:
 [20260217_182811] index:0;amount:42;created
 [20260217_182811] accounts:8;total:20049;deposits:0;withdrawals:0

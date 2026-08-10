@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 14:03:18 by alejandj          #+#    #+#             */
-/*   Updated: 2026/08/09 17:40:46 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 20:37:09 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,25 +31,25 @@ Contact::Contact(
 
 std::string Contact::getFirstName()
 {
-    return firstName;
+    return (firstName);
 }
 
 std::string Contact::getLastName()
 {
-    return lastName;
+    return (lastName);
 }
 
 std::string Contact::getNickname()
 {
-    return nickname;
+    return (nickname);
 }
 
 std::string Contact::getPhoneNumber()
 {
-    return phoneNumber;
+    return (phoneNumber);
 }
 
 std::string Contact::getDarkestSecret()
 {
-    return darkestSecret;
+    return (darkestSecret);
 }

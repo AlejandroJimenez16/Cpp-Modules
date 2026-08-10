@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 14:36:20 by alejandj          #+#    #+#             */
-/*   Updated: 2026/08/09 17:44:17 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/10 20:37:38 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ static std::string ftReadLine(std::string prompt, int type)
 		std::getline(std::cin, var);
 
 		if (std::cin.eof())
-			return "";
+			return ("");
 
 		var.erase(0, var.find_first_not_of(" \t\n\r\v\f"));
 		var.erase(var.find_last_not_of(" \t\n\r\v\f") + 1);
