@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/10 16:03:16 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/18 13:35:08 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:52:14 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int main( void )
 	
 	std::cout << Fixed::max( a, b ) << std::endl;
 
-	return 0;
+	return (0);
 }

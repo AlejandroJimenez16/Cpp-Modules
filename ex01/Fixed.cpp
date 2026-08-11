@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 16:38:04 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/18 13:33:46 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:51:36 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ Fixed::~Fixed()
 int Fixed::getRawBits() const
 {
 	std::cout << BOLD << GREEN << "getRawBits member function called" << RESET << std::endl;
-	return _fixedPointValue;
+	return (_fixedPointValue);
 }
 
 void Fixed::setRawBits(int const raw)

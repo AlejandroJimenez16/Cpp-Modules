@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 17:23:13 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/06 14:12:56 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:51:47 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,5 @@ int main( void )
 	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
 	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
 	
-	return 0;
+	return (0);
 }

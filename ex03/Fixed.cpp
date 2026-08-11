@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/08 16:18:41 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/18 13:41:32 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:52:28 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ Fixed::~Fixed() {}
 
 int Fixed::getRawBits(void) const
 {
-	return _fixedPointValue;
+	return (_fixedPointValue);
 }
 
 void Fixed::setRawBits(int const raw)

@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 13:35:00 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/03 14:46:03 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 11:51:28 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ int main( void )
     std::cout << b.getRawBits() << std::endl;
     std::cout << c.getRawBits() << std::endl;
     
-    return 0;
+    return (0);
 }
