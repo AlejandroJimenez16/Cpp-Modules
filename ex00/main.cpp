@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/06 16:56:06 by alejandj          #+#    #+#             */
-/*   Updated: 2026/04/21 14:45:10 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 18:27:34 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,5 @@ int main(void)
 	delete i;
 	delete k;
 	
-	return 0;
+	return (0);
 }
