@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 13:10:12 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/30 13:58:49 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:52:46 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ DiamondTrap::DiamondTrap(): ClapTrap(), ScavTrap(), FragTrap()
 	std::cout << MAGENTA << "DiamondTrap: Default constructor called" << RESET << std::endl;
 	_name = "Default";
 	ClapTrap::_name = _name + "_clap_name";
-	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
-	_attackDamage = FragTrap::_attackDamage;
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 30;
 }
 
 DiamondTrap::DiamondTrap(std::string name): ClapTrap(name), ScavTrap(name), FragTrap(name)
@@ -27,9 +27,9 @@ DiamondTrap::DiamondTrap(std::string name): ClapTrap(name), ScavTrap(name), Frag
 	std::cout << MAGENTA << "DiamondTrap: Parameterized constructor called" << RESET << std::endl;
 	_name = name;
 	ClapTrap::_name = _name + "_clap_name";
-	_hitPoints = FragTrap::_hitPoints;
-	_energyPoints = ScavTrap::_energyPoints;
-	_attackDamage = FragTrap::_attackDamage;
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 30;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& object): ClapTrap(object), ScavTrap(object), FragTrap(object)

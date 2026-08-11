@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/26 12:56:51 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/29 19:57:13 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:52:54 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ class DiamondTrap: public ScavTrap, public FragTrap
 
 		void attack(const std::string& target);
 		void whoAmI();
-		
 };
 
 #endif

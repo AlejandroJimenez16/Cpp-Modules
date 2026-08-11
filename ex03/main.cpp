@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/19 13:49:36 by alejandj          #+#    #+#             */
-/*   Updated: 2026/03/30 13:48:24 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/11 13:53:01 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int main(void)
 
 	std::cout << "\nDiamondTrap creation:" << std::endl;
 	DiamondTrap d("DT");
-	
 
 	std::cout << "\n================== Attacks ===================" << std::endl;
 
@@ -90,5 +89,5 @@ int main(void)
 	d.whoAmI();
 	
 	std::cout << "=============================================================\n" << std::endl;
-	return 0;
+	return (0);
 }
