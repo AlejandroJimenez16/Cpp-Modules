@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 12:40:03 by alejandj          #+#    #+#             */
-/*   Updated: 2026/08/10 21:03:47 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/08/12 22:39:36 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,11 @@ int main(int argc, char **argv)
 
 	std::string line;
 	while (getline(infile, line))
-		outfile << replaceString(line, s1, s2) << std::endl;
+	{
+		outfile << replaceString(line, s1, s2);
+		if (!infile.eof())
+			outfile << "\n";
+	}
 
 	infile.close();
 	outfile.close();
