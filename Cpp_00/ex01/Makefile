@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 11:15:02 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 11:15:04 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:10:10 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,9 +17,13 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC =	main.cpp		\
 		Contact.cpp		\
-		PhoneBook.cpp	\
+		PhoneBook.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
+
+HEADERS =	colors.hpp		\
+			Contact.hpp		\
+			PhoneBook.hpp
 
 all: $(NAME)
 
@@ -36,7 +40,7 @@ $(NAME): $(OBJECTS)
 	@echo "✅ \033[0;32mCPP COMPILADO!!!\033[0m"
 	@echo ""
 
-%.o: %.cpp
+%.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # ---------------------------------------------------------------------------- #
@@ -51,3 +55,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 11:33:42 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 11:33:44 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:09:30 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ NAME = nowWeAreTalking
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC =	Fixed.cpp			\
-		main.cpp			\
+SRC =	Fixed.cpp	\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -52,3 +52,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

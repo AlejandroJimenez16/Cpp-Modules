@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:03:03 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 12:03:05 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:11:37 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,17 +15,16 @@ NAME = fragTrap
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC =	ClapTrap.cpp		\
-		ScavTrap.cpp		\
-		FragTrap.cpp		\
-		main.cpp			\
+SRC =	ClapTrap.cpp	\
+		ScavTrap.cpp	\
+		FragTrap.cpp	\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
 HEADERS =	ClapTrap.hpp	\
 			ScavTrap.hpp	\
-			FragTrap.hpp	\
-
+			FragTrap.hpp
 
 all: $(NAME)
 
@@ -57,3 +56,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

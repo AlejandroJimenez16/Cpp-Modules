@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:04:38 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 12:04:40 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:12:04 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,15 +19,14 @@ SRC =	ClapTrap.cpp		\
 		ScavTrap.cpp		\
 		FragTrap.cpp		\
 		DiamondTrap.cpp		\
-		main.cpp			\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
 HEADERS =	ClapTrap.hpp		\
 			ScavTrap.hpp		\
 			FragTrap.hpp		\
-			DiamondTrap.hpp		\
-
+			DiamondTrap.hpp
 
 all: $(NAME)
 
@@ -59,3 +58,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

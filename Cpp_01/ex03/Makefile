@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 11:26:44 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 11:26:46 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:06:02 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,16 +15,16 @@ NAME = weaponTest
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC =	Weapon.cpp			\
-		HumanA.cpp			\
-		HumanB.cpp			\
-		main.cpp			\
+SRC =	Weapon.cpp		\
+		HumanA.cpp		\
+		HumanB.cpp		\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
 HEADERS =	Weapon.hpp		\
 			HumanA.hpp		\
-			HumanB.hpp		\
+			HumanB.hpp
 
 all: $(NAME)
 
@@ -56,3 +56,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

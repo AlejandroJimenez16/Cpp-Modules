@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 11:18:35 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 11:18:37 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:15:25 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,10 +15,12 @@ NAME = accountTest
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC =	Account.cpp	\
-		tests.cpp	\
+SRC =	Account.cpp		\
+		tests.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
+
+HEADERS =	Account.hpp
 
 all: $(NAME)
 
@@ -34,8 +36,8 @@ $(NAME): $(OBJECTS)
 	@echo ""
 	@echo "✅ \033[0;32mCPP COMPILADO!!!\033[0m"
 	@echo ""
-	
-%.o: %.cpp
+
+%.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # ---------------------------------------------------------------------------- #
@@ -50,3 +52,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

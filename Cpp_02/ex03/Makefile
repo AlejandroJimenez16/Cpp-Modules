@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 11:47:28 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 11:47:30 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:10:28 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,15 +15,15 @@ NAME = bsp
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC =	Fixed.cpp			\
-		Point.cpp			\
-		bsp.cpp				\
-		main.cpp			\
+SRC =	Fixed.cpp	\
+		Point.cpp	\
+		bsp.cpp		\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
-HEADERS =	Fixed.hpp		\
-			Point.hpp		\
+HEADERS =	Fixed.hpp	\
+			Point.hpp
 
 all: $(NAME)
 
@@ -55,3 +55,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:05:45 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 12:05:47 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:12:32 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC =	Animal.cpp			\
 		Cat.cpp				\
 		WrongAnimal.cpp		\
 		WrongCat.cpp		\
-		main.cpp			\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -28,9 +28,7 @@ HEADERS =	Animal.hpp			\
 			Dog.hpp				\
 			Cat.hpp				\
 			WrongAnimal.hpp		\
-			WrongCat.hpp		\
-
-
+			WrongCat.hpp
 
 all: $(NAME)
 
@@ -62,3 +60,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re

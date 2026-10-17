@@ -6,7 +6,7 @@
 #    By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:11:20 by alejandj          #+#    #+#              #
-#    Updated: 2026/10/13 12:11:21 by alejandj         ###   ########.fr        #
+#    Updated: 2026/10/17 23:13:32 by alejandj         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC =	AMateria.cpp		\
 		Cure.cpp			\
 		Character.cpp		\
 		MateriaSource.cpp	\
-		main.cpp			\
+		main.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -30,9 +30,7 @@ HEADERS =	AMateria.hpp			\
 			ICharacter.hpp			\
 			Character.hpp			\
 			IMateriaSource.hpp		\
-			MateriaSource.hpp		\
-
-
+			MateriaSource.hpp
 
 all: $(NAME)
 
@@ -64,3 +62,5 @@ fclean: clean
 	@echo "🚀 \033[0;32mExecutable $(NAME) has been removed! 👋\033[0m"
 
 re: fclean all
+
+.PHONY: all clean fclean re
