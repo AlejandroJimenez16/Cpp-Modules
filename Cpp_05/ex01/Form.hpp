@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 19:44:21 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/19 23:06:04 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/10/24 19:16:49 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class Form
 
 	public:
 		Form();
-		Form(std::string name, int gradeToSign, int gradeToExec);
+		Form(const std::string& name, int gradeToSign, int gradeToExec);
 		Form(const Form& object);
 		Form& operator=(const Form& object);
 		~Form();

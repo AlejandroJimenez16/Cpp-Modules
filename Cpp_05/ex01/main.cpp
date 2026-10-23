@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:31:03 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/19 22:14:51 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/10/23 21:25:52 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,48 +15,64 @@
 
 int main(void)
 {
-	Bureaucrat a("A", 42);
-	Bureaucrat b("B", 100);
-	
-	Form formA("formA", 50, 150);
-	Form formB("formB", 50, 150);
-	
 	std::cout << "======================" << std::endl;
-	std::cout << " Test 1: (OK)" << std::endl;
+	std::cout << " Test 1: (SUCCESS)" << std::endl;
 	std::cout << "======================" << std::endl;
-	std::cout << "Sign the form correctly" << std::endl;
-
-	std::cout << std::endl;
-
-	std::cout << a << std::endl;
-	a.signForm(formA);
-	std::cout << std::endl;
-
-	std::cout << formA << std::endl;
-
-	std::cout << "======================" << std::endl;
-	std::cout << " Test 2: (ERROR)" << std::endl;
-	std::cout << "======================" << std::endl;
-	std::cout << "Sign fails: bureaucrat grade does not reach the required grade" << std::endl;
-
-	std::cout << std::endl;
-
-	std::cout << b << std::endl;
-	b.signForm(formB);
-	std::cout << std::endl;
-
-	std::cout << formB << std::endl;
-
-	std::cout << "======================" << std::endl;
-	std::cout << " Test 3: (ERROR)" << std::endl;
-	std::cout << "======================" << std::endl;
-	std::cout << "Invalid constructors: grades 0 and 151" << std::endl;
+	std::cout << "Signing succeeds: bureaucrat meets the grade requirement" << std::endl;
 
 	std::cout << std::endl;
 
 	try
 	{
-		Form x("X", 0, 150);
+		Bureaucrat a("A", 42);
+		Form formA("formA", 50, 150);
+
+		std::cout << a << std::endl;
+		a.signForm(formA);
+		std::cout << std::endl;
+
+		std::cout << formA << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+	
+	std::cout << "======================" << std::endl;
+	std::cout << " Test 2: (EXCEPTION)" << std::endl;
+	std::cout << "======================" << std::endl;
+	std::cout << "Signing fails: bureaucrat does not meet the grade requirement" << std::endl;
+
+	std::cout << std::endl;
+
+	try
+	{
+		Bureaucrat b("B", 100);
+		Form formB("formB", 50, 150);
+
+		std::cout << b << std::endl;
+		b.signForm(formB);
+		std::cout << std::endl;
+
+		std::cout << formB << std::endl;
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+
+	std::cout << "======================" << std::endl;
+	std::cout << " Test 3: (EXCEPTION)" << std::endl;
+	std::cout << "======================" << std::endl;
+	std::cout << "Invalid grades: 0 and 151" << std::endl;
+
+	std::cout << std::endl;
+
+	std::cout << "Invalid signing grade:" << std::endl;
+	
+	try
+	{
+		Form x("X", 0, 42);
 	}
 	catch(const std::exception& e)
 	{
@@ -65,7 +81,27 @@ int main(void)
 
 	try
 	{
-		Form x("X", 151, 1);
+		Form x("X", 151, 42);
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+
+	std::cout << "\nInvalid execution grade:" << std::endl;
+	
+	try
+	{
+		Form x("X", 42, 0);
+	}
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+
+	try
+	{
+		Form x("X", 42, 151);
 	}
 	catch(const std::exception& e)
 	{
