@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 20:19:50 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/26 19:21:34 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/03 20:21:51 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ std::ostream& operator<<(std::ostream& out, const AForm& object)
 		out << " is unsigned, ";
 
 	out << "the grade required to sign is " << object.getGradeToSign()
-		<< " and the grade required to execute is " << object.getGradeToExec() << std::endl;
+		<< " and the grade required to execute is " << object.getGradeToExec();
 
 	return (out);
 }
