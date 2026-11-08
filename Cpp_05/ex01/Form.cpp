@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 20:19:50 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/08 20:16:15 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 21:24:29 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Form& Form::operator=(const Form& object)
 
 Form::~Form() {}
 
-std::string Form::getName() const
+const std::string& Form::getName() const
 {
 	return (_name);
 }

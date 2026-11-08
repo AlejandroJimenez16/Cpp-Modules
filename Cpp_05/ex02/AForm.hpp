@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 19:44:21 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/08 20:19:51 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 21:24:43 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class AForm
 		AForm& operator=(const AForm& object);
 		virtual ~AForm();
 
-		std::string getName() const;
+		const std::string& getName() const;
 		bool getSigned() const;
 		int getGradeToSign() const;
 		int getGradeToExec() const;

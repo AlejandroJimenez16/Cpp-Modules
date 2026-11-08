@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 19:44:21 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/08 20:16:12 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 21:24:20 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class Form
 		Form& operator=(const Form& object);
 		~Form();
 
-		std::string getName() const;
+		const std::string& getName() const;
 		bool getSigned() const;
 		int getGradeToSign() const;
 		int getGradeToExec() const;

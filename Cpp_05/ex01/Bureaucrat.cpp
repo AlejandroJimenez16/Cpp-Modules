@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 15:29:02 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/08 20:17:35 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 21:23:54 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Bureaucrat& Bureaucrat::operator=(const Bureaucrat& object)
 
 Bureaucrat::~Bureaucrat() {}
 
-std::string Bureaucrat::getName() const
+const std::string& Bureaucrat::getName() const
 {
 	return (_name);
 }
