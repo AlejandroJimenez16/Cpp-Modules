@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 19:44:21 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/25 16:51:43 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:19:51 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <string>
 #include <iostream>
-#include "Bureaucrat.hpp"
 
 class Bureaucrat;
 

@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 16:48:22 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/03 20:36:51 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 21:01:15 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
-#include <cstdlib>
 #include <ctime>
 
 #define GREEN "\033[1;32m"

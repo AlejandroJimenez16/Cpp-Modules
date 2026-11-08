@@ -6,11 +6,12 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 13:58:33 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/25 16:55:59 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:25:23 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
+#include "Bureaucrat.hpp"
 
 PresidentialPardonForm::PresidentialPardonForm(): AForm("PresidentialPardonForm", 25, 5), _target("default") {}
 

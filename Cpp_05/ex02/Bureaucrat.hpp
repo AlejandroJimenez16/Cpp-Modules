@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 23:59:13 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/26 19:21:13 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:19:38 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <string>
 #include <iostream>
-#include "AForm.hpp"
 
 class AForm;
 

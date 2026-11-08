@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 18:59:53 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/25 17:15:38 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:34:11 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define SHRUBBERYCREATIONFORM_HPP
 
 #include "AForm.hpp"
+#include <fstream>
 
 class ShrubberyCreationForm: public AForm
 {

@@ -6,11 +6,12 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 15:29:02 by alejandj          #+#    #+#             */
-/*   Updated: 2026/11/03 20:22:02 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:19:41 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "AForm.hpp"
 
 Bureaucrat::Bureaucrat(): _name("Default"), _grade(150) {}
 

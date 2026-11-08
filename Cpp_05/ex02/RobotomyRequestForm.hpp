@@ -6,7 +6,7 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 17:09:30 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/25 17:16:00 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:42:16 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ROBOTOMYREQUESTFORM_HPP
 
 #include "AForm.hpp"
+#include <cstdlib>
 
 class RobotomyRequestForm: public AForm
 {

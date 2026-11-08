@@ -6,12 +6,12 @@
 /*   By: alejandj <alejandj@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 17:20:20 by alejandj          #+#    #+#             */
-/*   Updated: 2026/10/26 19:21:47 by alejandj         ###   ########.fr       */
+/*   Updated: 2026/11/08 20:33:58 by alejandj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "RobotomyRequestForm.hpp"
-#include <cstdlib>
+#include "Bureaucrat.hpp"
 
 RobotomyRequestForm::RobotomyRequestForm(): AForm("RobotomyRequestForm", 72, 45), _target("default") {}
 
